@@ -72,7 +72,8 @@ var updateAdminById = function(req,res){
 
 var deleteAdminById=function(req,res){
 	if(req.body.id){
-		adminSchema.remove({_id : req.body.id},function(err,deleteData){
+		adminSchema.remove({_
+			id : req.body.id},function(err,deleteData){
 			console.log("err = = =",err,deleteData);
 			if(err){
 			return res.send({status:400,message:err});	
