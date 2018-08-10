@@ -12,5 +12,8 @@ app.listen(PORT,function(err,data){
 	db.connectDB();
 });
 
+app.get('/',function(req, res){
+	res.send({status :200. message:"Welcome to the first app deploy"});
+})
 
 app.use('/admin',adminRoute);
