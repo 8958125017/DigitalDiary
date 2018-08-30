@@ -3,7 +3,15 @@ var constant = require('./constant');
 
 function connectDB(){
 	//console.log('DB url is',constant.DBURL);
-	mongoose.connect("mongodb://localhost:27017/digital_diary", function(err,data){
+	
+
+
+
+
+
+	var mongoDb_URL="mongodb://pankaj1992:Pankaj*123@ds137862.mlab.com:37862/digital_diary"
+
+	mongoose.connect(mongoDb_URL, function(err,data){
 		console.log("connection sucess");
 	});
 }
