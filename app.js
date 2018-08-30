@@ -23,7 +23,7 @@ app.use(bodyparser.urlencoded({extended: true}));
 // it is used for  connect server with http
 
 var server = http.createServer(app);
-server.listen(PORT);
+server.listen(process.env.PORT ||  PORT);
 
 server.on('error',function onError(err){
 	console.log("err ",err);
